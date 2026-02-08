@@ -1,0 +1,185 @@
+body{
+    color: #383e45;
+    font-size: 14.4px;
+    line-height: 1.5; /* テキストの行間 */
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* header */
+header{
+    display: flex;
+    height: 60px;
+    /* background-color: #fff5ee; */
+    line-height: 60px; /* テキストを縦中央に配置 */
+    /* header（height: 60px）
+    ┌─────────────────────────────────────┐ー
+    │                                   ↑ │↑
+    │ About    Bicycle   line-height: 60px│height 60px 
+    │                       　　　　　　 ↓ │
+    |-------------------------------------|↓
+    └─────────────────────────────────────┘ー
+    line-heightで決めた高さに対して、テキストがその中央に来るようになる
+    headerの高さを60pxにしているので、line-heightを60pxに設定すると
+    テキストが縦中央に配置されているように見える
+    厳密にはフォントメトリクスの影響で完全な中央にはならない
+    https://www.youtube.com/watch?v=xVh5ipFPwkE
+    */
+}
+
+header .site-title img{
+    width: 120px;
+    padding-top: 10px;
+}
+
+header nav{
+    margin-left: auto;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin-left: 30px;
+}
+
+header nav ul li a{
+    color: #24292e;
+    font-size: 12px;
+    text-decoration: none; /* リンクの下線を消す */
+}
+
+header nav ul li a:hover{
+    opacity: 0.7;
+}
+
+/* mainvisual */
+
+.mainvisual img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 600px){
+    .mainvisual img{
+        height: calc(100vh - 60px);
+    }
+}
+/*
+vh は CSS のビューポート基準の長さ単位で、
+ブラウザで見えている画面の高さ（viewport height）を基準に。
+
+1vh = 画面の高さの 1%
+100vh = 画面の高さ 100%（画面いっぱい） 
+*/
+
+/* main */
+.section-title{
+    /* h2タグはブロック要素のため、borderを付けると幅いっぱいに線が引かれる */
+    display: inline-block; 
+    font-size: 35px;
+    border-bottom: 1px solid #383e45;
+    margin-bottom: 60px;
+}
+
+.content-title{
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* about */
+.about{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.about .content{
+    display: flex;
+    justify-content: center;
+}
+
+.about .content img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* 画像を円形にする */
+    margin-right: 30px;
+}
+
+.about .content .text{
+    text-align: left;
+}
+
+@media(max-width: 600px){
+    .about .content{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .about .content img{
+        margin: 0 auto;
+        /* margin-bottom: 20px; */
+    }
+
+    .about .content .text{
+        margin: 0 auto;
+    }
+}
+
+/* bicycle */
+
+/* 
+magin と text-align 使い分けの指針（覚え方）
+箱（コンテナ）を中央へ → margin: 0 auto;
+箱の中身（文字/インライン）を中央へ → text-align: center;
+*/
+
+.bicycle{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px; 
+}
+
+.bicycle .contents{
+    display: flex;
+}
+
+.bicycle .contents .content{
+    width: calc(100% / 3); /* 3分割 */
+    margin-right: 15px;
+} 
+
+.bicycle .contents .content:last-child{
+    margin-right: 0;
+}
+
+.bicycle .contents .content img{
+    width: 100%;
+}
+
+@media(max-width: 600px){
+    .bicycle .contents{
+        flex-direction: column;
+    }
+
+    .bicycle .contents .content{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p{
+    font-size: 10px;
+}
