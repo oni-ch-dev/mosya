@@ -326,11 +326,17 @@ cover は「要素全体を覆うように拡大縮小」するので、要素�
     }
 
     .post{
-        width: 70%;
+        width: 60%;
+        order: 2;
     }
 
     .sidebar{
         width: 22%;
+        order: 3;
+    }
+
+    .ad{
+        order: 1;
     }
 
     .sidebar .heading-medium{
