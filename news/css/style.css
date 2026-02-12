@@ -275,8 +275,76 @@ cover は「要素全体を覆うように拡大縮小」するので、要素�
 
 */
 
-@media(max-width: 600px){
-    .wrapper{
+@media(min-width: 800px){
+    /* 見出し */
+    .page-title{
+        font-size: 5rem;
+    }
+
+    .heading-large{
+        font-size: 4rem;
+    }
+    
+    .post-title{
+        font-size: 2rem;
+    }
+
+    /* header */
+    .page-header{
         display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+    }
+
+    .main-nav{
+        font-size: 2rem;
+    }
+
+    /* header cover */
+    .sub-cover{
+        height: 400px;
+        margin-bottom: 6rem;
+    }
+
+    /* HOME */
+    .cover-home{
+        background-image: url(../img/cover-home-l.webp);
+    }
+
+    .about{
+        margin: 4rem auto 0;
+    }
+
+    /* NEWS */
+    .cover-news{
+        background-image: url(../img/cover-news-l.webp);
+    }
+
+    .news-contents{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .post{
+        width: 70%;
+    }
+
+    .sidebar{
+        width: 22%;
+    }
+
+    .sidebar .heading-medium{
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    /* footer */
+    .page-footer{
+        background-image: url(../img/footer-l.webp);
+        padding-top: 12rem;
+    }
+
+    .info th{
+        padding-left: 2.5rem;
     }
 }
