@@ -15,6 +15,10 @@ CodeJump などを使って行った **模写コーディングの成果物**を
 > GitHub Pages を有効にしたら、ここにデモURLを追記します  
 > 例：`https://oni-ch-dev.github.io/mosya/profile/`
 
+### 2) Web Cafe News
+- お手本：1冊ですべて身につくHTML & CSSとWebデザイン入門講座［第2版］
+- コード：`/news`
+- ローカル：`news/index.html`
 ---
 
 ## ディレクトリ構成
