@@ -19,6 +19,11 @@ CodeJump などを使って行った **模写コーディングの成果物**を
 - お手本：1冊ですべて身につくHTML & CSSとWebデザイン入門講座［第2版］
 - コード：`/news`
 - ローカル：`news/index.html`
+
+### 3) Web Cafe Menu
+- お手本：1冊ですべて身につくHTML & CSSとWebデザイン入門講座［第2版］
+- コード：`/menu`
+- ローカル：`menu/index.html`
 ---
 
 ## ディレクトリ構成
